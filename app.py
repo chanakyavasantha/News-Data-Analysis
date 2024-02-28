@@ -426,7 +426,7 @@ async def init(q: Q) -> None:
         ])
     ])])
     q.page['sidebar'] = ui.nav_card(
-        box='sidebar', color='primary', title = 'News Data Analyzer', subtitle="by Harsha Vardhan",
+        box='sidebar', color='primary', title = 'News Data Analyzer', subtitle="by Chanakya Vasantha",
         value=f'#{q.args["#"]}' if q.args['#'] else '#intro',
         image='', items=[
             ui.nav_group('Menu', items=[
@@ -444,14 +444,14 @@ async def init(q: Q) -> None:
             ]),
         ],
         secondary_items=[
-            ui.persona(title='Harsha Vardhan', subtitle='Data Scientist , Developer, Researcher in AI', size='s',
+            ui.persona(title='Chanakya Vasantha', subtitle='Data Scientist , Developer, Researcher in AI', size='s',
                        image=''),
         ]
     )
     q.page['header'] = ui.header_card(
         box='header', title='', subtitle='',
         items=[
-            ui.persona(title='Harsha', subtitle='Developer', size='xs',
+            ui.persona(title='Chanakya Vasantha', subtitle='Developer', size='xs',
                        image=''),
         ]
     )
