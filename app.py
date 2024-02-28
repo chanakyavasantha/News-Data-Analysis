@@ -426,7 +426,7 @@ async def init(q: Q) -> None:
         ])
     ])])
     q.page['sidebar'] = ui.nav_card(
-        box='sidebar', color='primary', title = 'News Data Analyzer', subtitle="by Chanakya Vasantha",
+        box='sidebar', color='primary', title = 'News Data Analyzer', subtitle="",
         value=f'#{q.args["#"]}' if q.args['#'] else '#intro',
         image='', items=[
             ui.nav_group('Menu', items=[
@@ -443,17 +443,9 @@ async def init(q: Q) -> None:
                 
             ]),
         ],
-        secondary_items=[
-            ui.persona(title='Chanakya Vasantha', subtitle='Data Scientist , Developer, Researcher in AI', size='s',
-                       image=''),
-        ]
     )
     q.page['header'] = ui.header_card(
         box='header', title='', subtitle='',
-        items=[
-            ui.persona(title='Chanakya Vasantha', subtitle='Developer', size='xs',
-                       image=''),
-        ]
     )
 
     # If no active hash present, render page1.
